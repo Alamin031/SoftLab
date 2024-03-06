@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .image {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .text span.green {
+            color: green;
+        }
+
+        .question {
+            margin-top: 20px;
+            text-align: center;
+            border: 3rem;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+      .progress-button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        color: #000; 
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .section {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section1">
+      <img src="image/m2.png" alt="Section 1 Pic" class="image" />
+    </section>
+
+    <section class="section">
+        <img src="image/undraw_workout_gcgu.png" alt="Section 2 Pic" class="image">
+        <div class="text">Let's do your diet <span class="green">Katy</span></div>
+    </section>
+
+    <section class="section">
+      <div class="question">What is your current weight?</div>
+      <div class="question">What is your current height?</div>
+    </section>
+
+    <section class="section">
+      <div class="progress-button-container">
+        <div class="progress">1/4 steps</div>
+        <button class="button">
+          <img src="image/next.svg" alt="Next Icon" /> Next
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

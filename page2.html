@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .section2 {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .section1 {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .section3 {
+            width: 100%;
+            max-width: 100%;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .section3 p {
+            text-align: center;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+
+        .section2 img {
+            height: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .image {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            max-height: 250px;
+        }
+
+        .section .img {
+            height: 70%;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+        }
+
+        .section5 {
+            width: 100%;
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 5%;
+        }
+
+        .section4 {
+            width: 100%;
+            max-width: 100%;
+            background-color: white;
+            box-sizing: border-box;
+            margin-top: 7%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-name {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 14px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 25px;
+            cursor: pointer;
+            text-align: center;
+            background-color: white;
+        }
+
+        .button.home {
+            background-color: green;
+            border-radius: 3rem;
+        }
+        .button.left {
+            background-color: white;
+            border-radius: 3rem;
+        }
+        .button.love {
+            background-color: white;
+            border-radius: 3rem;
+        }
+
+        .icon-text {
+            align-items: center;
+            color: white;
+            margin-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        footer p {
+            margin-top: 10%;
+            font-weight: bold;
+        }
+        .footerbtn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10%;
+        }
+
+        .nutritional-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .calories {
+            font-size: 14px;
+            color: red;
+        }
+
+        .calories,
+        .fat,
+        .carbs,
+        .protein {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        .calories span,
+        .fat span,
+        .carbs span,
+        .protein span {
+            display: block;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<section class="section1">
+    <img src="image/m2.png" alt="Section 1 Pic" class="image" />
+</section>
+
+<section class="section2" style="position: relative;">
+    <button class="button left" style="position: absolute; top: 20px; left: 20px;">
+        <img src="image/left-arrow-6420.svg" alt="Back" />
+    </button>
+    <button class="button love" style="position: absolute; top: 20px; right: 20px;">
+        <img src="image/red-heart-11121.svg" alt="Love" />
+    </button>
+
+    <img
+            src="image/brooke-lark-nBtmglfY0HU-unsplash.png"
+            alt="Section 2 Pic"
+            class="image"
+    />
+    <div class="text">Yogurt with fruits</div>
+    <p>
+        Quisque sit amet sagittis erat. Duis pharetra ornare venenatis. Nulla
+    </p>
+</section>
+
+<section class="section3">
+    <p>Nutritional Information</p>
+    <div class="nutritional-info">
+        <div class="calories">
+            243<span class="calories-text">calories</span>
+        </div>
+        <div class="fat">2.8g<span class="fat-text">fat</span></div>
+        <div class="carbs">45.7g<span class="carbs-text">carbs</span></div>
+        <div class="protein">9.8g<span class="protein-text">protein</span></div>
+    </div>
+</section>
+
+<section class="section4">
+    <div class="row">
+        <p class="text">Ingredients</p>
+    </div>
+    <div class="row">
+        <div class="image-container">
+            <img
+                    src="image/sara-cervera-4caIPcmVDII-unsplash.png"
+                    alt="Section 3 Pic"
+                    class="image"
+            />
+            <span class="img-name">Kiwi</span>
+        </div>
+        <div class="image-container">
+            <img
+                    src="image/sara-cervera-4caIPcmVDII-unsplash.png"
+                    alt="Section 3 Pic"
+                    class="image"
+            />
+            <span class="img-name">Yogurt</span>
+        </div>
+        <div class="image-container">
+            <img
+                    src="image/nicholas-barbaros-Oqrx1ZxBYtc-unsplash.png"
+                    alt="Section 3 Pic"
+                    class="image"
+            />
+            <span class="img-name">Cherry</span>
+        </div>
+        <div class="image-container">
+            <img
+                    src="image/joanna-kosinska-4qujjbj3srs-unsplash.png"
+                    alt="Section 3 Pic"
+                    class="image"
+            />
+            <span class="img-name">Blueberry</span>
+        </div>
+    </div>
+</section>
+
+<section class="section5">
+    <footer>
+        <p>preparation</p>
+        <div class="footerbtn">
+            <button class="button home">
+                <img src="image/social-media.svg" alt="Home Icon" />
+                <span class="icon-text">Home</span>
+            </button>
+            <button class="button">
+                <img src="image/interface (2).svg" alt="Settings Icon" />
+            </button>
+            <button class="button">
+                <img src="image/sports-and-competition.svg" alt="Profile Icon" />
+            </button>
+            <button class="button">
+                <img src="image/symbol.svg" alt="SMS Icon" />
+            </button>
+        </div>
+    </footer>
+</section>
+</body>
+</html>
